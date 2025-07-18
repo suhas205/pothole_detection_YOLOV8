@@ -3,3 +3,4 @@ pandas
 geocoder
 Pillow
 ultralytics
+python-dotenv
