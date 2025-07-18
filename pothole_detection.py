@@ -7,9 +7,10 @@ from ultralytics import YOLO
 os.makedirs('results', exist_ok=True)
 
 # Load the YOLOv8 model
-model = YOLO(r"C:\suhas photo\train\trains\runs\detect\custom_yolo_v8_scratch8\weights\best.pt")
+model = YOLO("best.pt")
 
-ffmpeg_path = r"C:\project\pothole_detection_webapp_mongodb working one\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe"
+# ffmpeg_path = "ffmpeg"  # Use system ffmpeg for cross-platform/cloud deployment
+# The above is commented out as Render provides ffmpeg in PATH by default.
 
 # Function to detect potholes in an image
 def detect_from_image(image_path, model):
