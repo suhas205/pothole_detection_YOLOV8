@@ -4,3 +4,4 @@ geocoder
 Pillow
 ultralytics
 python-dotenv
+
